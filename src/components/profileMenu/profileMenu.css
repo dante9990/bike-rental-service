@@ -1,0 +1,60 @@
+.profile-menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 10px 0;
+}
+
+.profile-menu__user {
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    flex-direction: column;
+    align-items: flex-end;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+}
+
+.profile-menu__user:hover {
+    background: #6d0e11;
+}
+
+.profile-menu__img {
+    display: none;
+}
+
+.btn__profile-menu {
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    background: none;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.btn__profile-menu:hover {
+    color: #b3afaf;
+}
+
+.btn__profile-menu:active {
+    opacity: 0.6;
+}
+
+@media (max-width: 1000px) {
+    .profile-menu__name,
+    .profile-menu__lastname {
+        display: none;
+    }
+
+    .profile-menu__img {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: url('../../assets/svg/user-people-account-svgrepo-com.svg') no-repeat center;
+        background-size: contain;
+    }
+
+    .btn__profile-menu {
+        padding: 0;
+    }
+}

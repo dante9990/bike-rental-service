@@ -1,0 +1,173 @@
+.message__info {
+    display: flex;
+    flex-direction: column;
+    background: #910f13;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 30px;
+    min-width: 500px;
+    max-width: 500px;
+}
+
+.message__title,
+.message__owner_full_name,
+.message__text,
+.message__date,
+.resolution__form,
+.message__resolution {
+    background: #fff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.message__title {
+    font-size: 36px;
+}
+
+.message__text,
+.message__resolution {
+    font-size: 18px;
+}
+
+.message__dates {
+    display: flex;
+    justify-content: space-between;
+}
+
+.message__date {
+    font-size: 12px;
+}
+
+.load {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.load__img {
+    background: url('../../assets/svg/coffee-svgrepo-com.svg') no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.load__text {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.message__btns {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn__edit_message {
+    border: 2px solid #000;
+    background: #fff;
+    padding: 5px;
+
+}
+
+.btn__edit_message:hover {
+    background: #9e9e9e;
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.2);
+}
+
+.btn__edit_message:active {
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+.btn__edit_message:disabled {
+    background: #fff;
+    box-shadow: none;
+    cursor: default;
+}
+
+.resolution__form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resolution__input {
+    border: none;
+    outline: none;
+    width: 80%;
+    border-bottom: 1px solid #000;
+    font-size: 18px;
+}
+
+.resolution__input::placeholder {
+    font-size: 18px;
+}
+
+.btn__resolution {
+    border: 2px solid #910f13;
+    background: #fff;
+}
+
+.btn__resolution:hover {
+    background: #910f13;
+}
+
+.btn__resolution:active {
+    opacity: 0.6;
+}
+
+.message__resolution {
+    align-self: flex-end;
+}
+
+.btn__done {
+    border: 2px solid #000;
+    background: #fff;
+}
+
+.btn__done:hover {
+    background: #37c916;
+    color: #fff;
+}
+
+.btn__done:active {
+    opacity: 0.6;
+}
+
+.btn__done:disabled {
+    background: #fff;
+    box-shadow: none;
+    cursor: default;
+    color: #000;
+}
+
+.message__info_link {
+    color: #fff;
+    align-self: end;
+}
+
+.message__info_link:hover {
+    color: #9e9e9e;
+}
+
+.done {
+    background: #37c916;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 1480px) {
+    .message__info {
+        min-width: 400px;
+        max-width: 400px;
+    }
+
+    .message__title {
+        font-size: 24px;
+    }
+
+    .message__owner_full_name {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,23 @@
+.auth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 10px 10px 0;
+}
+
+.auth__link {
+    color: #d1cbcc;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.vertical_line {
+    width: 2px;
+    background: #d1cbcc;
+    height: 20px;
+    margin: 0 10px;
+}
+
+.auth__link:hover {
+    text-decoration: underline;
+}

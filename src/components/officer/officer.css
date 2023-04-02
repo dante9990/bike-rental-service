@@ -1,0 +1,65 @@
+.user {
+    display: flex;
+    border: 2px solid #910f13;
+    border-radius: 10px;
+    min-width: 450px;
+    max-width: 450px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.user__name {
+    padding: 20px 130px 20px 10px;
+    font-size: 24px;
+    width: 100%;
+    text-decoration: none;
+    color: #000;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.user__name:hover {
+    background: #e6e6e6;
+}
+
+.user__name:active {
+    box-shadow: 0px 1px 14px 11px rgba(34, 60, 80, 0.29) inset;
+}
+
+.btn__delete {
+    border: none;
+    border-radius: 0;
+    background: #910f13;
+    width: 80px;
+    font-size: 36px;
+    color: #fff;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.btn__delete:hover {
+    background: #6d0e11;
+}
+
+.btn__delete:active {
+    opacity: 0.6;
+}
+
+.btn__delete:disabled,
+.btn__delete:active {
+    background: #bd5f62;
+    opacity: 1;
+    cursor: default;
+}
+
+@media (max-width: 1480px) {
+    .user {
+        min-width: 400px;
+        max-width: 400px;
+    }
+
+    .user__name {
+        padding: 20px 0px 20px 10px;
+        font-size: 18px; 
+    }
+}

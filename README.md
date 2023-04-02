@@ -1,3 +1,8 @@
+Мой аккаунт с персональным clientId:
+email: ds@sf.ru
+пароль: oblivion2341
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

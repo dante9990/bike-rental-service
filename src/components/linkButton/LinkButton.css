@@ -1,0 +1,42 @@
+.btn {
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn__auth {
+    font-size: 16px;
+    border: 2px solid #fff;
+    color: #fff;
+    background: none;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.btn__auth:hover {
+    background: #6d0e11;
+}
+
+.btn__auth:active {
+    opacity: 0.6;
+}
+
+.btn__message {
+    display: flex;
+    align-self: center;
+    background: #910f13;
+    color: #fff;
+    font-size: 22px;
+    padding: 10px 10px;
+    border: none;
+    text-decoration: none;
+}
+
+.btn__message:hover {
+    background: #6d0e11;
+}
+
+.btn__message:active {
+    opacity: 0.6;
+}

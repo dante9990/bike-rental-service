@@ -1,0 +1,16 @@
+.main {
+    width: 1480px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+@media (max-width: 1480px) {
+    .main {
+        width: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+}
