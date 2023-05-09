@@ -15,8 +15,8 @@ function MyProfile(props) {
 
     const myMessages = messages.filter(m => m.officer === user.user.id)
 
-    const removeMessage = async (id) => {
-        await instanceAuth.delete(`cases/${id}`)
+    const removeMessage =  (id) => {
+         instanceAuth.delete(`cases/${id}`)
             .then(() => {
                 dispatch(removemessage(id))
             })

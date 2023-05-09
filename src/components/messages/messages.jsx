@@ -13,8 +13,8 @@ function Messages() {
         instanceAuth.get('cases').then(response => dispatch(allmessages(response.data.data)))
     }, [])
 
-    const removeMessage = async (id) => {
-        await instanceAuth.delete(`cases/${id}`)
+    const removeMessage = (id) => {
+         instanceAuth.delete(`cases/${id}`)
         .then(() => {
             dispatch(removemessage(id))
         })

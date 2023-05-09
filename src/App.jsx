@@ -28,9 +28,9 @@ function App() {
 
   }
 
-  const authSubmit = async (obj) => {
+  const authSubmit = (obj) => {
     try {
-      await instance.post('auth/sign_in', obj)
+      instance.post('auth/sign_in', obj)
         .then(response => {
           dispatch(login(response.data))
           window.localStorage.setItem('token', response.data.data.token)

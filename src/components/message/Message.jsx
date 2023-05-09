@@ -20,8 +20,8 @@ function Message(props) {
         removeMessage(message._id)
     }
 
-    const changeStatus = async (id, obj) => {
-        await instanceAuth.put(`cases/${id}`, obj)
+    const changeStatus = (id, obj) => {
+        instanceAuth.put(`cases/${id}`, obj)
         .then(response => dispatch(editmessage(response.data.data)))
     }
 

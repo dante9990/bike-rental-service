@@ -20,9 +20,9 @@ function Officers() {
     setForm(!form)
   }
 
-  const addOfficer = async (obj) => {
+  const addOfficer = (obj) => {
     try {
-      await instanceAuth.post('officers', obj)
+       instanceAuth.post('officers', obj)
         .then(response => {
           dispatch(addofficer(response.data.data))
         })
@@ -31,8 +31,8 @@ function Officers() {
     }
   }
 
-  const removeOfficer = async (id) => {
-    await instanceAuth.delete(`officers/${id}`)
+  const removeOfficer =  (id) => {
+     instanceAuth.delete(`officers/${id}`)
       .then(() => {
         dispatch(removeofficer(id))
       })

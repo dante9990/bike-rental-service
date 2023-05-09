@@ -44,8 +44,8 @@ function MessageInfo() {
         setLoad(false)
     }, 1000)
 
-    const editMessage = async (obj) => {
-        await instanceAuth.put(`cases/${id}`, obj)
+    const editMessage = (obj) => {
+        instanceAuth.put(`cases/${id}`, obj)
             .then(response => dispatch(editmessage(response.data.data)))
     }
 

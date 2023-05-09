@@ -40,17 +40,17 @@ function FormMessage() {
         setValues({...values, [e.target.name]: newDate})
     }
 
-    const addMessage = async (obj) => {
+    const addMessage = (obj) => {
         if(!auth) {
             try {
-                await instance.post('public/report', obj)
+                 instance.post('public/report', obj)
                     .then(response => dispatch(addmessage(response.data.data)))
             } catch (e) {
                 alert(e.response.data.message)
             }
         } else {
             try {
-                await instanceAuth.post('cases', obj)
+                 instanceAuth.post('cases', obj)
                     .then(response => dispatch(addmessage(response.data.data)))
             } catch (e) {
                 alert(e.response.data.message)

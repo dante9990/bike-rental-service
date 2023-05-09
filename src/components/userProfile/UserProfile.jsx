@@ -14,8 +14,8 @@ function UserProfile() {
 
     const dispatch = useDispatch()
 
-    const editOfficer = async (obj) => {
-        await instanceAuth.put(`officers/${id}`, obj)
+    const editOfficer = (obj) => {
+         instanceAuth.put(`officers/${id}`, obj)
             .then(response => dispatch(editofficer(response.data.data)))
 
     }
